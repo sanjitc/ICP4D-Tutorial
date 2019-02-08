@@ -11,10 +11,10 @@ export PATH=$INFORMIXDIR/bin:$PATH
 basedir=$(dirname `which $0`)
 
 dbaccess << ESQL
-  CREATE DATABASE mortgagedb;
-  DATABASE mortgagedb;
-  CREATE TABLE mortgage_default (id INTEGER, mortgage_default CHAR(10));
-  Load from '$PAYLOAD/data/mortgage_default.txt' delimiter ',' insert into mortgage_default; 
+  CREATE DATABASE MORTGAGEDB;
+  DATABASE MORTGAGEDB;
+  CREATE TABLE MORTGAGE_DEFAULT (ID INTEGER, MORTGAGE_DEFAULT CHAR(10));
+  Load from '$PAYLOAD/data/mortgage_default.txt' delimiter ',' insert into MORTGAGE_DEFAULT; 
 ESQL
 
 ## Check status of Informix instance 
