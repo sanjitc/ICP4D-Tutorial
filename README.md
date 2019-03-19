@@ -27,7 +27,7 @@ Follow these steps to create the required services and run the notebook locally.
 Clone the `icp4data tutorial` repository locally. In a terminal, run the following command:
 
 ```
-$ git clone https://github.com/sanjitc/ICP4XTutorial.git
+$ git clone https://github.com/sanjitc/ICP4D-Tutorial.git
 ```
 
 ### 2. List Available Samples
