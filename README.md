@@ -50,7 +50,16 @@ $  ./load_samples.sh -t mortgage
 ```
 
 ### 4. Create Data Connection
+Connection Details for Mongo:
+```
+Connection type = Mongo
+Host = Master1 IP (Use private IP, if it's on Fyre)
+Port  = 27017
+Database = icpd_mongo
+Username = mongodbuser
+Password = password
 
-
+JDBC URL =  jdbc:ibm:mongodb://<master 1 IP>:27017;databaseName=icpd_mongo
+```
 ### 5. Load Machine Learning Project
 
