@@ -67,7 +67,7 @@ Connection Details for Oracle:
 Connection type = Oracle
 Host = Master1 IP 
 Port  = 32710
-Database = ORCLCDB
+Database (SID) = ORCLCDB
 Username = ICPDUSER
 Password = password
 
