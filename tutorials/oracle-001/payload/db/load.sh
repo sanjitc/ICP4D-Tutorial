@@ -24,6 +24,8 @@ GRANT CONNECT,RESOURCE,DBA TO icpduser;
 GRANT CREATE SESSION TO icpduser;
 EOF
 
+sleep 60
+
 # Create Tables
 sqlplus icpduser/password@ORCLCDB <<EOF
 CREATE TABLE mortgage_customer (
