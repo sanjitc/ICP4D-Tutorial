@@ -50,6 +50,18 @@ $  ./load_samples.sh -t mortgage
 ```
 
 ### 4. Create Data Connection
+
+Connection Details for DB2:
+```
+Connection type = DB2
+Host = Master1 IP 
+Port  = 50000
+Database = MORTGAGE
+Username = db2inst1
+Password = password
+
+JDBC URL =  jdbc:db2://<master 1 IP>:50000/MORTGAGE
+```
 Connection Details for Mongo:
 ```
 Connection type = Mongo
