@@ -61,5 +61,17 @@ Password = password
 
 JDBC URL =  jdbc:ibm:mongodb://<master 1 IP>:27017;databaseName=icpd_mongo
 ```
+
+Connection Details for Oracle:
+```
+Connection type = Oracle
+Host = Master1 IP 
+Port  = 32710
+Database = ORCLCDB
+Username = ICPDUSER
+Password = password
+
+JDBC URL =  jdbc:oracle:thin:@<master 1 IP>:32710:ORCLCDB
+```
 ### 5. Load Machine Learning Project
 
