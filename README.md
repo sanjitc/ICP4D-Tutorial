@@ -35,9 +35,12 @@ $ git clone https://github.com/sanjitc/icp4d-tutorials.git
 
 ```
 $ ./load_samples.sh -l
-- mortgage
-- data_virtualization
-
+- banking-001
+- data-virtualization-001
+- mongo-001
+- mortgage-001
+- mysql-001
+- oracle-001
 ```
 
 
