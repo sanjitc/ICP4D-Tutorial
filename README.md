@@ -68,7 +68,7 @@ JDBC URL =  jdbc:db2://<master 1 IP>:50000/MORTGAGE
 
 Connection Details for Informix (data-virtualization-001)
 ```
-Connection type = DB2
+Connection type = Informix
 Host = Master1 IP 
 Port  = 9088
 Database = MORTGAGEDB
