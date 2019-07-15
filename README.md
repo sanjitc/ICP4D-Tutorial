@@ -65,6 +65,19 @@ Password = password
 
 JDBC URL =  jdbc:db2://<master 1 IP>:50000/MORTGAGE
 ```
+
+Connection Details for Informix (data-virtualization-001)
+```
+Connection type = DB2
+Host = Master1 IP 
+Port  = 9088
+Database = MORTGAGEDB
+Username = informix
+Password = in4mix
+Server name = informix
+
+JDBC URL =  jdbc:informix-sqli://<same IP as Web console>:9088/mortgagedb: INFORMIXSERVER=informix;user=informixt;password=in4mix
+```
 Connection Details for Mongo:
 ```
 Connection type = Mongo
