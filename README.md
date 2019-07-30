@@ -101,5 +101,17 @@ Password = password
 
 JDBC URL =  jdbc:oracle:thin:@<master 1 IP>:32710:ORCLCDB
 ```
+
+Connection Details for MySQL:
+```
+Connection type = MySQL
+Host = Master1 IP 
+Port  = 33060
+Database (SID) = mortgage
+Username = root
+Password = password
+
+JDBC URL =  jdbc:oracle:thin:@<master 1 IP>:33060:mortgage
+```
 ### 5. Load Machine Learning Project
 
