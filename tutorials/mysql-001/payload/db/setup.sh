@@ -5,7 +5,8 @@
 RIGHT_NOW=$(date +"%x %r %Z")
 TIME_STAMP="Updated on $RIGHT_NOW by $USER"
 #PAYLOAD="/tmp/samples/payload"
-PAYLOAD="/var/lib/mysql-files"
+PAYLOAD="/opt/mysql"
+PAYLOAD_ORG=/var/lib/mysql-files
 MYSQL_DOCKER_NAME="mysqldb"
 D=docker
 
@@ -40,11 +41,12 @@ __loadMySQLDocker()
    $D cp data/Mortgage_Customer.csv  $MYSQL_DOCKER_NAME:$PAYLOAD
    $D cp data/Mortgage_Default.csv  $MYSQL_DOCKER_NAME:$PAYLOAD
    $D cp data/Mortgage_Property.csv $MYSQL_DOCKER_NAME:$PAYLOAD
+   $D exec -it $MYSQL_DOCKER_NAME cp -r $PAYLOAD/* $PAYLOAD_ORG
 
    echo -e "\nMySQL being loaded with data for you to try out"
 
    #run setup the payload
-   $D exec $MYSQL_DOCKER_NAME  bash -c "cd $PAYLOAD/; ./data/load.sh"
+   $D exec $MYSQL_DOCKER_NAME  bash -c "cd $PAYLOAD_ORG/; ./data/load.sh"
 
 
 }
