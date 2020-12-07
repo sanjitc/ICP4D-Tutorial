@@ -34,6 +34,7 @@ $ git clone https://github.com/sanjitc/icp4d-tutorials.git
 
 
 ```
+$ cd icp4d-tutorials/tutorials
 $ ./load_samples.sh -l
 - banking-001
 - data-virtualization-001
